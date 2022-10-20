@@ -11,8 +11,8 @@ void	usart0_init(uint32_t ubrr)
 	UCSR0A = 0x00;
 	//	For UCSR0C we rewrite 0x00, then write some bits
 	UCSR0C = 0x00;
-	UCSR0C |= (0<<UMSEL00)|(0<<UMSEL01);	//	async UART (USART)
-	UCSR0C |= (0<<USBS0);					//	1 stop bit at the end
+//	UCSR0C |= (0<<UMSEL00)|(0<<UMSEL01);	//	async UART (USART)
+//	UCSR0C |= (0<<USBS0);					//	1 stop bit at the end
 	UCSR0C |= (1<<UCSZ00)|(1<<UCSZ01);		//	8 bit data transfer
 //	UCSR0C |= (0<<USBS0)|(3<<UCSZ00);		//	the same one
 	UCSR0B = (1<<RXEN0)|(1<<TXEN0);			//	turn ON rx/tx
