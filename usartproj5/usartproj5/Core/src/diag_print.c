@@ -61,7 +61,7 @@ void	diag_write(char c_val)
 
 void	c_val_rec(int16_t d_val)
 {
-	char	c_val = NULL;
+	char	c_val;
 	
 	if (d_val == 0)
 		return ;
@@ -72,8 +72,6 @@ void	c_val_rec(int16_t d_val)
 
 void	diag_print(char *str1, int16_t d_val)
 {
-	char	*str2 = NULL;
-
 	//	Print string message
 	int	i = 0;
 	if (str1)
